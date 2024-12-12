@@ -23,6 +23,19 @@ programa
 			escreva("\nAluno Aprovado")
 		} senao {
 			escreva("\nAluno em recuperação")
+
+	/*---------- Operadores aritmétricos ----------
+	
+			== -> igual
+			>  -> maior
+			<  -> menor
+			>= -> maior ou igual
+			<= -> menor ou igual
+			!= -> diferente
+	
+	
+	
+	*/
 		}
 	}
 }
@@ -31,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 452; 
+ * @POSICAO-CURSOR = 533; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
