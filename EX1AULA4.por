@@ -15,7 +15,7 @@ programa
 		escreva("Qual é o desconto do produto: ")
 		leia(desconto)
 
-		precoDesconto = valor * (desconto)/100
+		precoDesconto = valor * (desconto/100)
 		precoFinal = valor - precoDesconto
 
 		escreva("O produto ", produto," tem o valor de R$", valor, " e esta com ", desconto,"% de desconto, sendo o valor final de R$", precoFinal)
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 464; 
+ * @POSICAO-CURSOR = 78; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
