@@ -15,7 +15,7 @@ programa
 			a = b
 			b = var_Nums[x]
 		}
-		para(inteiro y=0;y<5;y++){
+		para(inteiro y=1;y<5;y++){
 			escreva(var_Nums[y], "\n")
 		}
 	}
@@ -25,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 251; 
+ * @POSICAO-CURSOR = 213; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
