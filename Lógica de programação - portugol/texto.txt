@@ -1,0 +1,62 @@
+Primeiro Cria a soma total
+Soma de Vendas = SUM(Vendas[ValorVenda])
+
+Criar a tablea das somas totais das vendas
+Soma Todas as Vendas = CALCULATE([Soma de Vendas];ALL(Vendas))
+
+
+Cria a porcentagem de todos
+% Total = DIVIDE(Vendas[Soma de Vendas];[Soma Todas as Vendas];BLANK())
+
+
+Criar Metas
+Meta de Vendas= SUM(Vendas[ValorVenda])*1,3
+
+
+
+% Metas 2 = DIVIDE(Vendas[Meta de Vendas];[Soma Todas as Vendas];BLANK())
+
+Filtros Power BI
+Valor -> % Total
+
+Valor Máximo -> % Meta 2
+
+
+Selecionar por vendas
+Soma Vendas Selecionadas = CALCULATE([Soma de Vendas];ALLSELECTED(Vendas))
+
+Porcentagem
+% Total Selecionados = DIVIDE([Soma de Vendas];[Soma Vendas Selecionadas];BLANK())
+
+
+Metas de Vendas Selecionadas
+Meta Vendas Selecionadas = CALCULATE([Meta de Vendas];ALLSELECTED(Vendas))
+
+
+Porcentagem
+% Metas 3 = DIVIDE(Vendas[Meta de Vendas];[Meta Vendas Selecionadas];BLANK())
+
+
+Para criar um calendário
+
+Obter dados -> Consulta nula
+
+=#date(2014,1,1)from
+fx -> =List.Dates(Fonte, Number.From(DateTime.LocalNow())-Number.From(Fonte), #duration(1,0,0,0)
+
+Para a Tabela
+
+
+Criar
+Ano
+Mês
+Ano+Mês = Coluna Personalizada -> =Ano*100+Mês
+Nome dos Mês
+Nome do Mês Abreviado -> Coluna Personalizada -> =Date.ToText([Data],"MMM")
+Mês Ano -> Coluna de exemplos -> seleção
+
+
+
+
+% Metas Controle = DIVIDE(Plan1[Soma Todas];[Meta Vendas Selecionadas];BLANK())
+
