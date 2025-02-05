@@ -16,6 +16,7 @@ public class SistemaNumeroMaior {
 		valor2 = input.nextInt();
 		
 		//Processamento de dados
+		//Saída de dados
 		if(valor1 > valor2) {
 			System.out.println("O valor "+ valor1 + " é o maior que "+valor2);
 		} else if(valor2 > valor1) {
