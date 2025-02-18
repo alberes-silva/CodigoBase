@@ -18,7 +18,7 @@ public class OlaMundo {
 		
 		
 		System.out.println("O meu nome é "+ nome);
-		System.out.println("A minha idade é "+idade);
+		System.out.println("A minha idade é "+idade+ " anos");
 		
 		
 		
